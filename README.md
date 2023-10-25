@@ -13,9 +13,9 @@ ESAssets is:
 
 ## Why ESAssets?
 
-When building for the web, people often use a bundler for bundling their JS/TS sources along with static assets such as images and CSS files. Thanks to ECMAScript Modules, this process is relatively well-defined for source modules. But for images and other assets, people usually rely on bundler-specific import structures. This makes code difficult to port between bundlers, and also complicates running code inside test runners.
+When building for the web, people often use a bundler for bundling their JS/TS sources along with static assets such as images and CSS files. Thanks to ECMAScript Modules, this process is relatively well-defined for source modules. But for images and other assets, people usually rely on bundler-specific import structures. This makes code difficult to port between bundlers, and also complicates running code inside test runners. It also compromises type safety, since TypeScript has no knowledge of your assets beyond generic `.d.ts` files.
 
-ESAssets aims to replace this practice with bundler-agnostic asset management that is portable and supported in any environment.
+ESAssets aims to replace this practice with bundler-agnostic asset management that is portable, type-safe, and supported in any environment.
 
 **You don't use a bundler?** That's great! Even if you don't use a bundler, ESAssets can help you streamline your asset management. It offers tooling and conventions that can be useful in any environment.
 
@@ -28,6 +28,9 @@ To explain how it works, it's important to understand that ESAssets consists of 
 * **ESAssets Handlers** can make your assets available in convenient formats. **Preprocessing handlers** can transform assets before adding them to an asset module, while **runtime handlers** can help you load or use assets in your application. Handlers can either be loaded as third-party libraries, or they can be loaded directly from your own codebase.
 
 ### Examples
+
+> [!Note]
+> These examples are provided to give you an idea how ESAssets works. You could write these files by hand, but you typically would use **ESAssets Tools** to generate and update them.
 
 The first example shows how an `svg-react` handler could be used to take SVG asset definitions and export them as React components:
 
