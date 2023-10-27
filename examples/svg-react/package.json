@@ -1,0 +1,19 @@
+{
+  "name": "svg-react",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel -p 8080 --hmr-port 8081 --dist-dir build public/index.html"
+  },
+  "devDependencies": {
+    "@parcel/core": "^2.10.1",
+    "@types/react": "^18.2.33",
+    "parcel": "^2.10.1",
+    "process": "^0.11.10",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

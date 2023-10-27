@@ -1,0 +1,3 @@
+- COLLECTION: Dazzle Line Icons
+- LICENSE: CC Attribution License
+- AUTHOR: Dazzle UI
